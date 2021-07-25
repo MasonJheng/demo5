@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBAction func speak(_ sender: Any) {
         
         //print(loveTextField.text)
+
         let speechUtterance = AVSpeechUtterance(string: loveTextField.text!)
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "zh-TW")
         let synthesizer = AVSpeechSynthesizer()
